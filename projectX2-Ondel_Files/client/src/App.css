@@ -183,6 +183,11 @@ img {
 	color: #333;
 }
 
+.fullspan {
+	text-align: center;
+	display: inline-block;
+}
+
 .btn-primary,
 .bg-primary,
 .badge-primary,

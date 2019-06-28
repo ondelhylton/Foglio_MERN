@@ -16,11 +16,22 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
         <Spinner />
       ) : (
         <Fragment>
-          <h1 className='large text-primary'>Developers</h1>
-          <p className='lead'>
-            <i className='fab fa-connectdevelop' /> Browse and connect with
-            developers
-          </p>
+        <div className ="fullspan">
+        
+          <h1 className='large text-primary'>Designers</h1>
+          <h3 className='headingtext'>
+             Browse and Connect with Designers and Stylists
+          </h3>
+          <p>Online showrooms recently featured on Foglio</p>
+          
+
+          <img src={require('../../img/Showroom_clients.png')} 
+      alt="clothes"
+      style={{width: 1000}}
+      />
+      </div>
+
+
           <div className='profiles'>
             {profiles.length > 0 ? (
               profiles.map(profile => (

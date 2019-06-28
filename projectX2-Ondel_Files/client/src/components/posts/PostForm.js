@@ -9,7 +9,7 @@ const PostForm = ({ addPost }) => {
   return (
     <div className='post-form'>
       <div className='bg-primary p'>
-        <h3>Say Something...</h3>
+        <h3>Post something about thing you're doing...</h3>
       </div>
       <form
         className='form my-1'
@@ -19,11 +19,22 @@ const PostForm = ({ addPost }) => {
           setText('');
         }}
       >
+
+          <textarea
+          name='title'
+          cols='5'
+          rows='1'
+          placeholder='Article Title'
+          value={text}
+          onChange={e => setText(e.target.value)}
+          required
+        />
+        <br></br>
         <textarea
           name='text'
           cols='30'
           rows='5'
-          placeholder='Create a post'
+          placeholder='Article Text'
           value={text}
           onChange={e => setText(e.target.value)}
           required
