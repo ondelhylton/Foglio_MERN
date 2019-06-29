@@ -61,9 +61,7 @@ const Technology = ({ getProfiles, profile: { profiles, loading } }) => {
 <br></br>
 <br></br>
   <div className="m-span-12 t-span-6  m-va-middle">
-		<h3 class="small-heading">360° Online Showroom</h3>
-		<p>Buyers can immerse themselves in 360° images of designer collections understanding fabrications, intricate details and silhouettes.</p>
-		<p>Using the ORB, ORDRE’s patented image-capturing mobile technology, a designer’s runway and commercial collections can be digitised in a matter of hours.</p>
+		<h3 class="small-heading">Online Virtual Showroom</h3>
 		<br></br>
     <h4 class="subheading">Interactive</h4>
 		<p>Drag to spin &amp; review every aspect of a product</p>
@@ -131,7 +129,7 @@ const Technology = ({ getProfiles, profile: { profiles, loading } }) => {
       <br></br>
 
       <div className ="fullspan">
-      <h3 class="small-heading">360° Online Showroom</h3>
+      <h3 class="small-heading">Virtual Runways</h3>
       <p>Foglio’s technology and digital assets are used in a designer’s physical showroom to create efficiencies in the traditional order taking process. Buyers who miss the fashion show can sit front row in the showroom</p>
       <br></br>
 
