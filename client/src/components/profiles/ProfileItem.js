@@ -8,7 +8,8 @@ const ProfileItem = ({
     status,
     company,
     location,
-    skills
+    skills,
+    image
   }
 }) => {
   return (
@@ -31,6 +32,13 @@ const ProfileItem = ({
           </li>
         ))}
       </ul>
+
+      <img src={image} 
+          alt="clothes"
+          style={{width: 500}}
+          />
+
+
     </div>
   );
 };

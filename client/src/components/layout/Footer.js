@@ -21,7 +21,7 @@ const Footer = () => {
             <li>
             <Link to='/posts'>Foglio News</Link>
             </li>
-            <li class="copyright">© Copyright Foglio.com Team</li>
+            <li class="copyright">©Copyright Foglio.com Team</li>
             </ul>
         </div>
 

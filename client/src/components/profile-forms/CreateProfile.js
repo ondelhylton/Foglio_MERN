@@ -11,7 +11,7 @@ const CreateProfile = ({ createProfile, history }) => {
     location: '',
     status: '',
     skills: '',
-    githubusername: '',
+    image: '',
     bio: '',
     twitter: '',
     facebook: '',
@@ -28,7 +28,7 @@ const CreateProfile = ({ createProfile, history }) => {
     location,
     status,
     skills,
-    githubusername,
+    image,
     bio,
     twitter,
     facebook,
@@ -73,9 +73,10 @@ const CreateProfile = ({ createProfile, history }) => {
             <option value='0'>* Select Professional Status</option>
             <option value='Designer'>Designer</option>
             <option value='Junior Developer'>Publicist</option>
-            <option value='Senior Developer'>Journalist</option>
-            <option value='Manager'>Marketing Manager</option>
-            <option value='Student or Learning'>Stylist</option>
+            <option value='Journalist'>Journalist</option>
+            <option value='Stylist'>Stylist</option>
+            <option value='Marketer'>Marketer</option>
+            <option value='Student or Learning'>Student</option>
             {/* <option value='Instructor'>Instructor or Teacher</option>
             <option value='Intern'>Intern</option> */}
             <option value='Other'>Other</option>
@@ -127,8 +128,8 @@ const CreateProfile = ({ createProfile, history }) => {
           <input
             type='text'
             placeholder='Image URL'
-            name='githubusername'
-            value={githubusername}
+            name='image'
+            value={image}
             onChange={e => onChange(e)}
           />
           <small className='form-text'>

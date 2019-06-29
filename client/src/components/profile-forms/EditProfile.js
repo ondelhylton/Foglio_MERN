@@ -16,7 +16,7 @@ const EditProfile = ({
     location: '',
     status: '',
     skills: '',
-    githubusername: '',
+    image: '',
     bio: '',
     twitter: '',
     facebook: '',
@@ -36,8 +36,8 @@ const EditProfile = ({
       location: loading || !profile.location ? '' : profile.location,
       status: loading || !profile.status ? '' : profile.status,
       skills: loading || !profile.skills ? '' : profile.skills.join(','),
-      githubusername:
-        loading || !profile.githubusername ? '' : profile.githubusername,
+      image:
+        loading || !profile.image ? '' : profile.image,
       bio: loading || !profile.bio ? '' : profile.bio,
       twitter: loading || !profile.social ? '' : profile.social.twitter,
       facebook: loading || !profile.social ? '' : profile.social.facebook,
@@ -53,7 +53,7 @@ const EditProfile = ({
     location,
     status,
     skills,
-    githubusername,
+    image,
     bio,
     twitter,
     facebook,
@@ -71,25 +71,36 @@ const EditProfile = ({
   };
 
   return (
+
+
+
     <Fragment>
-      <h1 className='large text-primary'>Create Your Profile</h1>
-      <p className='lead'>
-        <i className='fas fa-user' /> Let's get some information to make your
-        profile stand out
+
+<div className="row">
+<div class="column">
+      <h1 className='primary'>Edit Your Profile</h1>
+      <img src={image} 
+      alt="clothes"
+      style={{width: 400}}
+      />
+      <p className='lead4'>
+        <i className='fas fa-user' /> Tell us who you are
       </p>
-      <small>* = required field</small>
+      <small>*required field</small>
       <form className='form' onSubmit={e => onSubmit(e)}>
         <div className='form-group'>
           <select name='status' value={status} onChange={e => onChange(e)}>
             <option value='0'>* Select Professional Status</option>
+            <option value='Designer'>Designer</option>
             <option value='Publicist'>Publicist</option>
             <option value='Journalist'>Journalist</option>
             <option value='Stylist'>Stylist</option>
-            <option value='Marketing'>Marketing</option>
+            <option value='Marketer'>Marketer</option>
+            <option value='Student or Learning'>Student</option>
             <option value='Other'>Other</option>
           </select>
           <small className='form-text'>
-            Give us an idea of where you are at in your career
+          Give us an idea of your role in your company
           </small>
         </div>
         <div className='form-group'>
@@ -113,7 +124,7 @@ const EditProfile = ({
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            Could be your own or a company website
+            Company website
           </small>
         </div>
         <div className='form-group'>
@@ -131,33 +142,34 @@ const EditProfile = ({
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Profile Image'
+            placeholder='A'
             name='skills'
             value={skills}
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
+          Please use comma separated values (i.e. suits, dresses, lingerie)
           </small>
         </div>
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Github Username'
-            name='githubusername'
-            value={githubusername}
+            placeholder='Image URL'
+            name='image'
+            value={image}
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            If you want your latest repos and a Github link, include your
-            username
+          Profile Image URL
           </small>
         </div>
         <div className='form-group'>
           <textarea
-            placeholder='A short bio of yourself'
+            placeholder='Summary of your company'
             name='bio'
             value={bio}
+            cols='30'
+            rows='5'
             onChange={e => onChange(e)}
           />
           <small className='form-text'>Tell us a little about yourself</small>
@@ -171,7 +183,7 @@ const EditProfile = ({
           >
             Add Social Network Links
           </button>
-          <span>Optional</span>
+          <small>(Optional)</small>
         </div>
 
         {displaySocialInputs && (
@@ -238,6 +250,18 @@ const EditProfile = ({
           Go Back
         </Link>
       </form>
+      </div>
+
+        
+      <div class="column2">
+      <br></br>
+      <img src={require('../../img/edit.jpg')} 
+      alt="clothes"
+      style={{width: 500}}
+      />
+</div>
+</div>
+
     </Fragment>
   );
 };

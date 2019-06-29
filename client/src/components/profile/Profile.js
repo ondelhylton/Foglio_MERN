@@ -40,7 +40,7 @@ const Profile = ({
             <ProfileTop profile={profile} />
             <ProfileAbout profile={profile} />
             <div className='profile-exp bg-white p-2'>
-              <h2 className='text-primary'>Experience</h2>
+              <h2 className='text-primary'>Products Available</h2>
               {profile.experience.length > 0 ? (
                 <Fragment>
                   {profile.experience.map(experience => (
@@ -51,12 +51,12 @@ const Profile = ({
                   ))}
                 </Fragment>
               ) : (
-                <h4>No experience credentials</h4>
+                <h4>No products available</h4>
               )}
             </div>
 
             <div className='profile-edu bg-white p-2'>
-              <h2 className='text-primary'>Education</h2>
+              <h2 className='text-primary'>Upcoming Shows</h2>
               {profile.education.length > 0 ? (
                 <Fragment>
                   {profile.education.map(education => (
@@ -67,12 +67,12 @@ const Profile = ({
                   ))}
                 </Fragment>
               ) : (
-                <h4>No education credentials</h4>
+                <h4>No upcoming shows</h4>
               )}
             </div>
 
-            {profile.githubusername && (
-              <ProfileGithub username={profile.githubusername} />
+            {profile.image && (
+              <ProfileGithub username={profile.image} />
             )}
           </div>
         </Fragment>

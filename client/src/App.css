@@ -211,7 +211,12 @@ img {
 	display: inline-block;
 }
 
-.btn-primary,
+.btn-primary {
+	background: var(--primary-color);
+	color: rgb(255, 255, 255);
+	background-color: #000000;
+}
+
 .bg-primary,
 .badge-primary,
 .alert-primary {

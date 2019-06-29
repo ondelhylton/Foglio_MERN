@@ -22,20 +22,17 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
           <h3 className='headingtext'>
              Browse and Connect with Designers and Stylists
           </h3>
-          <br></br>
-          
-          
-          <hr></hr>
-          
+          <p></p>
           <p>Online showrooms recently featured on Foglio</p>
-          
+          <br></br>
+          <hr></hr>
           
 
           <img src={require('../../img/Showroom_clients.png')} 
       alt="clothes"
       style={{width: 1000}}
       />
-      <hr></hr>
+      
       </div>
 
 
