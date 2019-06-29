@@ -1,0 +1,6 @@
+{
+	"mongoURI": "mongodb+srv://ohylton:ondel123@devconnector-ohrem.mongodb.net/test?retryWrites=true&w=majority",
+	"jwtSecret": "secret",
+	"githubClientId": "",
+	"githubSecret": ""
+}
