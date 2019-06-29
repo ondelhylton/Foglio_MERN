@@ -47,8 +47,13 @@ const CreateProfile = ({ createProfile, history }) => {
 
   return (
     <Fragment>
+      <br></br>
       <h2 className='headtext'>For Exclusive Access to Showrooms and Designers, Submit Your Profile for Approval</h2>
       
+      
+      <div className="row">
+      <div class="column">
+      <br></br>
       <br></br>
       <p className='subtext'>
       Fill in fields below so Foglio knows who you are
@@ -138,14 +143,14 @@ const CreateProfile = ({ createProfile, history }) => {
         </div>
         <div className='form-group'>
           <textarea
-            placeholder='Summary of your company'
+            placeholder='Why you want to work with Foglio'
             name='bio'
             value={bio}
             cols='30'
             rows='5'
             onChange={e => onChange(e)}
           />
-          <small className='form-text'>Tell us a little about yourself</small>
+          <small className='form-text'>Tell us about you/your company</small>
         </div>
 
         <div className='my-2'>
@@ -156,7 +161,7 @@ const CreateProfile = ({ createProfile, history }) => {
           >
             Add Social Network Links
           </button>
-          <span>Optional</span>
+          <small>(Optional)</small>
         </div>
 
         {displaySocialInputs && (
@@ -223,6 +228,17 @@ const CreateProfile = ({ createProfile, history }) => {
           Go Back
         </Link>
       </form>
+      </div>
+
+      <div class="column22">
+      <br></br>
+      <img src={require('../../img/network.jpg')} 
+      alt="clothes"
+      style={{width: 500}}
+      />
+      </div>
+
+      </div>
     </Fragment>
   );
 };

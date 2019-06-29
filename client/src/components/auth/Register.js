@@ -50,7 +50,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
         <i className='fas fa-user' /> Create Your Account
       </p>
 
-
+      
     <div className="row2">
       <form className='form' onSubmit={e => onSubmit(e)}>
         <div className='form-group'>
@@ -90,7 +90,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
           />
         </div>
         <div className ='signin'>
-        <input type='submit' className='btn btn-primary' value='Register     |' />
+        <input type='submit' className='btn btn-primary' value='  Register ' />
       
       <p className='my-1'>
        <Link to='/login'> Already have an account? - Sign In</Link>

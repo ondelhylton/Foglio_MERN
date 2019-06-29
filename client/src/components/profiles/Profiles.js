@@ -17,7 +17,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
       ) : (
         <Fragment>
         <div className ="fullspan">
-        
+        <br></br>
           <h1 className='large text-primary'>Designers</h1>
           <h3 className='headingtext'>
              Browse and Connect with Designers and Stylists

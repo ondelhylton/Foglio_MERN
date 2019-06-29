@@ -202,13 +202,19 @@ img {
 .footerContainers {
 	margin-left: 140px;
 	display: inline-block;
-	margin-top: 7px;
+	margin-top: 8px;
 	margin-bottom: 6px;
 }
 
 .fullspan {
 	text-align: center;
 	display: inline-block;
+}
+
+.column22 {
+	/* background-color: black; */
+	margin-left: 55px;
+	margin-top: 40px;
 }
 
 .btn-primary {

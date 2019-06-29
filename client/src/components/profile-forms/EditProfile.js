@@ -78,11 +78,13 @@ const EditProfile = ({
 
 <div className="row">
 <div class="column">
+  <br></br>
       <h1 className='primary'>Edit Your Profile</h1>
       <img src={image} 
-      alt="clothes"
+      alt=""
       style={{width: 400}}
       />
+      <br></br>
       <p className='lead4'>
         <i className='fas fa-user' /> Tell us who you are
       </p>
@@ -165,14 +167,14 @@ const EditProfile = ({
         </div>
         <div className='form-group'>
           <textarea
-            placeholder='Summary of your company'
+            placeholder='Why you need Foglio'
             name='bio'
             value={bio}
             cols='30'
             rows='5'
             onChange={e => onChange(e)}
           />
-          <small className='form-text'>Tell us a little about yourself</small>
+          <small className='form-text'>Tell us about you/your company</small>
         </div>
 
         <div className='my-2'>

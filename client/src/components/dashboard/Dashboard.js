@@ -28,7 +28,7 @@ const Dashboard = ({
         <Fragment>
           <br></br>
           <img src={profile.image} 
-      alt="clothes"
+      alt=""
       style={{width: 500}}
       />
       <br></br>
@@ -51,8 +51,16 @@ const Dashboard = ({
           <Link to='/create-profile' className='btn btn-primary my-1'>
             Create Profile
           </Link>
+          <br></br>
+          <br></br>
+          <img src={require('../../img/showroom1.jpg')} 
+      alt="360tour"
+      style={{width: 900}}
+      />
         </Fragment>
       )}
+
+
     </Fragment>
   );
 };

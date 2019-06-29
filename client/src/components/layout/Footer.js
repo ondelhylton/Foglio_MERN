@@ -28,9 +28,8 @@ const Footer = () => {
 
         <div className="footerContainers">
         <ul>
-          
+          <li>J. Lobos Vega</li>
             <li>Ondel Hylton</li>
-            <li>J. Lobos Vega</li>
             <li>Raquel</li>
             <li>Stella Kim</li>
 
@@ -39,11 +38,15 @@ const Footer = () => {
 
         <div className="footerContainers">
         <ul>
-          
-            <li>ABOUT</li>
-            <li>CONTACT US</li>
-            <li>PRIVACY POLICY</li>
-            <li>TERMS & CONDITIONS</li>
+        
+        <li>
+            <Link to='https://github.com/ondelhylton/Foglio_MERN'>About</Link>
+            </li>
+          <li>
+            <Link to='mailto:webmaster@example.com'>Contact Us</Link>
+            </li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
 
             </ul>
         </div>

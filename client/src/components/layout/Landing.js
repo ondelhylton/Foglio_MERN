@@ -19,7 +19,7 @@ const Landing = ({ isAuthenticated }) => {
             Media/Press Connection to Designers and Showrooms
           </h1>
           <div className='buttons'>
-            <Link to='/register' className='btn btn-primary' id='buttonwhite'>
+            <Link to='/register' className='btn btn-primary8' id='buttonwhite'>
               Sign Up
             </Link>
             <Link to='/login' className='btn btn-light'>

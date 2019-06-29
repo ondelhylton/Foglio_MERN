@@ -67,7 +67,7 @@ const Login = ({ login, isAuthenticated }) => {
           />
         </div>
       <div className = 'signin'>
-        <input type='submit' className='btn btn-primary' value='Login     |' />
+        <input type='submit' className='btn btn-primary' value='  Login  ' />
        
       
       <p className='my-1'>
