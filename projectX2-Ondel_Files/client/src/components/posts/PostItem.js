@@ -10,21 +10,22 @@ const PostItem = ({
   removeLike,
   deletePost,
   auth,
-  post: { _id, text, name, avatar, user, likes, comments, date },
+  post: { _id, text, name, title, user, likes, comments, date },
   showActions
 }) => (
   <div className='post bg-white p-1 my-1'>
     <div>
       <Link to={`/profile/${user}`}>
-        <img className='round-img' src={avatar} alt='' />
         <h4>{name}</h4>
       </Link>
     </div>
     <div>
-      <p className='my-1'>{text}</p>
-      <p className='post-date'>
+    <h2 className='my-1'>{title}</h2>
+    <p className='post-date'>
         Posted on <Moment format='YYYY/MM/DD'>{date}</Moment>
       </p>
+      <p className='my-1'>{text}</p>
+
 
       {showActions && (
         <Fragment>
