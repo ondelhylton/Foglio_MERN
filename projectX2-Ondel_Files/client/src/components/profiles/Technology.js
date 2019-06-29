@@ -83,8 +83,7 @@ const Technology = ({ getProfiles, profile: { profiles, loading } }) => {
 
       <br></br>
       <hr></hr>
-      <br></br>
-      <br></br>
+
 
       
 <div className="row">
@@ -123,13 +122,24 @@ const Technology = ({ getProfiles, profile: { profiles, loading } }) => {
 </video>
 
 </div>
-
-
-
-      </div>
+</div>
 
       <br></br>
       <hr></hr>
+      <br></br>
+      <br></br>
+
+      <div className ="fullspan">
+      <h3 class="small-heading">360° Online Showroom</h3>
+      <p>Foglio’s technology and digital assets are used in a designer’s physical showroom to create efficiencies in the traditional order taking process. Buyers who miss the fashion show can sit front row in the showroom</p>
+      <br></br>
+
+      <img src={require('../../img/360.png')} 
+      alt="360tour"
+      style={{width: 900}}
+      />
+      </div>
+
     </Fragment>
 
 

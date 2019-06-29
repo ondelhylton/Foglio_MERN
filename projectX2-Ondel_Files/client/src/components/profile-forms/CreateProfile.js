@@ -47,40 +47,45 @@ const CreateProfile = ({ createProfile, history }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary'>Create Your Profile</h1>
-      <p className='lead'>
-        <i className='fas fa-user' /> Let's get some information to make your
-        profile stand out
+      <h2 className='headtext'>For Exclusive Access to Showrooms and Designers, Submit Your Profile for Approval</h2>
+      
+      <br></br>
+      <p className='subtext'>
+      Fill in fields below so Foglio knows who you are
       </p>
-      <small>* = required field</small>
+      <small>*required field</small>
       <form className='form' onSubmit={e => onSubmit(e)}>
         <div className='form-group'>
-          <select name='status' value={status} onChange={e => onChange(e)}>
-            <option value='0'>* Select Professional Status</option>
-            <option value='Designer'>Designer</option>
-            <option value='Junior Developer'>Junior Developer</option>
-            <option value='Senior Developer'>Senior Developer</option>
-            <option value='Manager'>Manager</option>
-            <option value='Student or Learning'>Student or Learning</option>
-            <option value='Instructor'>Instructor or Teacher</option>
-            <option value='Intern'>Intern</option>
-            <option value='Other'>Other</option>
-          </select>
-          <small className='form-text'>
-            Give us an idea of where you are at in your career
-          </small>
-        </div>
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Company'
+            placeholder='Company Name'
             name='company'
             value={company}
             onChange={e => onChange(e)}
           />
-          <small className='form-text'>
+            <small className='form-text'>
             Could be your own company or one you work for
           </small>
+          <br></br>
+
+          <select name='status' value={status} onChange={e => onChange(e)}>
+            <option value='0'>* Select Professional Status</option>
+            <option value='Designer'>Designer</option>
+            <option value='Junior Developer'>Publicist</option>
+            <option value='Senior Developer'>Journalist</option>
+            <option value='Manager'>Marketing Manager</option>
+            <option value='Student or Learning'>Stylist</option>
+            {/* <option value='Instructor'>Instructor or Teacher</option>
+            <option value='Intern'>Intern</option> */}
+            <option value='Other'>Other</option>
+          </select>
+          <small className='form-text'>
+            Give us an idea of your role in your company
+          </small>
+        </div>
+
+
         </div>
         <div className='form-group'>
           <input
@@ -91,7 +96,7 @@ const CreateProfile = ({ createProfile, history }) => {
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            Could be your own or a company website
+            Company website
           </small>
         </div>
         <div className='form-group'>
@@ -103,39 +108,40 @@ const CreateProfile = ({ createProfile, history }) => {
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            City & state suggested (eg. Boston, MA)
+            Address, City, State 
           </small>
         </div>
         <div className='form-group'>
           <input
             type='text'
-            placeholder='* Skills'
+            placeholder='* Products Carried or Interested in'
             name='skills'
             value={skills}
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
+            Please use comma separated values (i.e. suits, dresses, lingerie)
           </small>
         </div>
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Github Username'
+            placeholder='Image URL'
             name='githubusername'
             value={githubusername}
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            If you want your latest repos and a Github link, include your
-            username
+            Profile Image Link
           </small>
         </div>
         <div className='form-group'>
           <textarea
-            placeholder='A short bio of yourself'
+            placeholder='Summary of your company'
             name='bio'
             value={bio}
+            cols='30'
+            rows='5'
             onChange={e => onChange(e)}
           />
           <small className='form-text'>Tell us a little about yourself</small>

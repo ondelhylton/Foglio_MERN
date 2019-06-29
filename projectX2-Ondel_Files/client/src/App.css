@@ -97,7 +97,7 @@ img {
 }
 
 .text-primary {
-	color: var(--primary-color);
+	color: black;
 }
 
 .text-dark {
@@ -205,7 +205,7 @@ img {
 .bg-light,
 .badge-light,
 .alert-light {
-	color: #fff;
+	color: rgb(0, 0, 0);
 }
 
 .btn-dark,
@@ -377,7 +377,7 @@ button {
 }
 
 .landing-inner {
-	color: #fff;
+	color: rgb(0, 0, 0);
 	height: 100%;
 	width: 80%;
 	margin: auto;
@@ -420,7 +420,7 @@ button {
 }
 
 .profile-top .icons a {
-	color: #fff;
+	color: rgb(0, 0, 0);
 	margin: 0 0.3rem;
 }
 

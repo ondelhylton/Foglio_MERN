@@ -125,13 +125,13 @@ const EditProfile = ({
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            City & state suggested (eg. Boston, MA)
+            Address, City, State
           </small>
         </div>
         <div className='form-group'>
           <input
             type='text'
-            placeholder='* Skills'
+            placeholder='Profile Image'
             name='skills'
             value={skills}
             onChange={e => onChange(e)}
