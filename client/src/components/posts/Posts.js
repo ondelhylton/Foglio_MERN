@@ -15,6 +15,7 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
     <Spinner />
   ) : (
     <Fragment>
+      <br></br>
       <div className ="fullspan">
       <h1 className='large text-primary'>Foglio News</h1>
       <p className='headText'>

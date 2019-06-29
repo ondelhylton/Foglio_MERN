@@ -29,7 +29,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
           
 
           <img src={require('../../img/Showroom_clients.png')} 
-      alt="clothes"
+      alt=""
       style={{width: 1000}}
       />
       

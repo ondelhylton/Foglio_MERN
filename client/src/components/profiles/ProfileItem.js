@@ -34,7 +34,7 @@ const ProfileItem = ({
       </ul>
 
       <img src={image} 
-          alt="clothes"
+          alt=""
           style={{width: 500}}
           />
 

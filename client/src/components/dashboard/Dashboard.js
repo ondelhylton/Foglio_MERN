@@ -41,6 +41,8 @@ const Dashboard = ({
               Delete Account
             </button>
           </div>
+
+          
         </Fragment>
       ) : 
       
@@ -57,8 +59,13 @@ const Dashboard = ({
       alt="360tour"
       style={{width: 900}}
       />
+
+
+      
         </Fragment>
       )}
+
+      
 
 
     </Fragment>

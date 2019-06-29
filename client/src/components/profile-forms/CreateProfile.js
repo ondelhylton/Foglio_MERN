@@ -143,7 +143,7 @@ const CreateProfile = ({ createProfile, history }) => {
         </div>
         <div className='form-group'>
           <textarea
-            placeholder='Why you want to work with Foglio'
+            placeholder='Company description'
             name='bio'
             value={bio}
             cols='30'
@@ -224,7 +224,7 @@ const CreateProfile = ({ createProfile, history }) => {
         )}
 
         <input type='submit' className='btn btn-primary my-1' />
-        <Link className='btn btn-light my-1' to='/dashboard'>
+        <Link className='btn btn-primary' to='/dashboard'>
           Go Back
         </Link>
       </form>
