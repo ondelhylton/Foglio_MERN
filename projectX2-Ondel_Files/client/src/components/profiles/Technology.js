@@ -1,9 +1,10 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, Component, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Spinner from '../layout/Spinner';
 import ProfileItem from './ProfileItem';
 import { getProfiles } from '../../actions/profile';
+import ReactPlayer from 'react-player'
 
 const Technology = ({ getProfiles, profile: { profiles, loading } }) => {
   useEffect(() => {
@@ -53,6 +54,8 @@ const Technology = ({ getProfiles, profile: { profiles, loading } }) => {
 <div className="column2">
   
 
+
+
 <br></br>
 <br></br>
 <br></br>
@@ -75,6 +78,53 @@ const Technology = ({ getProfiles, profile: { profiles, loading } }) => {
 	</div>
 
   </div>
+
+      </div>
+
+      <br></br>
+      <hr></hr>
+      <br></br>
+      <br></br>
+
+      
+<div className="row">
+
+
+<div className="column1">
+  
+
+<br></br>
+<br></br>
+<br></br>
+<div class="m-span-12 t-span-5  m-va-middle">
+		<h3 class="small-heading">Front Row Virtual Reality</h3>
+		<p>FOGLIO provides VR headsets to buyers within the retail network to allow them a front row seat at fashion shows and presentations globally from the comfort of their office when travel is not always possible.</p>
+		<br></br>
+    <h4 class="subheading">Immersive</h4>
+		<p>Insights into the movement, drape, fit of a collection as well as the theatre of the live event</p>
+		<br></br>
+    <h4 class="subheading">Simple Fit</h4>
+		<p>FOGLIO headsets are hand-held &amp; don't require complicated headbands or earphones</p>
+		<br></br>
+    <h4 class="subheading">Compatible</h4>
+		<p>The FOGLIO VR experience is compatible with all modern smartphones</p>
+	
+	</div>
+
+  </div>
+
+  <div className="column2">
+      <br></br>
+      {/* <ReactPlayer url='https://s3-eu-west-1.amazonaws.com/ordre-asset-prod/homepage/VR/virtual_reality.mp4' playing />
+      
+       */}
+      <video className='video' autoPlay loop muted>
+    <source src='https://s3-eu-west-1.amazonaws.com/ordre-asset-prod/homepage/VR/virtual_reality.mp4'  type='video/mp4' size='50px'/>
+</video>
+
+</div>
+
+
 
       </div>
 

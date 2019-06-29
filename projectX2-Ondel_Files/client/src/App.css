@@ -53,6 +53,11 @@ ul {
 	list-style: none;
 }
 
+.video {
+	height: 100%;
+	width: 150%;
+}
+
 img {
 	width: 100%;
 }
