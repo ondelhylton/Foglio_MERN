@@ -5,6 +5,7 @@ import Spinner from '../layout/Spinner';
 import ProfileItem from './ProfileItem';
 import { getProfiles } from '../../actions/profile';
 import ReactPlayer from 'react-player'
+import Footer from '../layout/Footer';
 
 const Technology = ({ getProfiles, profile: { profiles, loading } }) => {
   useEffect(() => {
@@ -95,7 +96,7 @@ const Technology = ({ getProfiles, profile: { profiles, loading } }) => {
 <br></br>
 <br></br>
 <br></br>
-<div class="m-span-12 t-span-5  m-va-middle">
+<div className="m-span-12 t-span-5  m-va-middle">
 		<h3 class="small-heading">Front Row Virtual Reality</h3>
 		<p>FOGLIO provides VR headsets to buyers within the retail network to allow them a front row seat at fashion shows and presentations globally from the comfort of their office when travel is not always possible.</p>
 		<br></br>
@@ -139,20 +140,20 @@ const Technology = ({ getProfiles, profile: { profiles, loading } }) => {
       style={{width: 900}}
       />
       </div>
+      <br></br>
+ 
+      
 
     </Fragment>
-
-
-
-
-
-
-
 
       )}
+     
     </Fragment>
+    
   );
+  
 };
+
 
 Technology.propTypes = {
   getProfiles: PropTypes.func.isRequired,

@@ -5,14 +5,60 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <Fragment>
-      div class="grid--wrapper footer-content-wrapper m-gutter-none">
-    <div className="footer-div m-span-12 t-span-3">
+      
+    <div className="footer">
+    <div className="footerDivs">
+
+        <div className="footerContainers">
         <ul>
-            <li><a href="https://www.ordre.com/en/page/technology-360">Technology</a></li>
-            <li><a href="https://www.ordre.com/en/page/network-395">ORDRE Network</a></li>
-            <li><a href="https://www.ordre.com/en/news">ORDRE News</a></li>
-            <li class="copyright">© Copyright ORDRE.COM</li>
-        </ul>
+        <li>
+            <Link to='/technology'>Foglio Technology</Link>
+            </li>
+
+            <li>
+            <Link to='/profiles'>Foglio Network</Link>
+            </li>
+            <li>
+            <Link to='/posts'>Foglio News</Link>
+            </li>
+            <li class="copyright">© Copyright Foglio.com Team</li>
+            </ul>
+        </div>
+
+
+        <div className="footerContainers">
+        <ul>
+          
+            <li>Ondel Hylton</li>
+            <li>J. Lobos Vega</li>
+            <li>Raquel</li>
+            <li>Stella Kim</li>
+
+            </ul>
+        </div>
+
+        <div className="footerContainers">
+        <ul>
+          
+            <li>ABOUT</li>
+            <li>CONTACT US</li>
+            <li>PRIVACY POLICY</li>
+            <li>TERMS & CONDITIONS</li>
+
+            </ul>
+        </div>
+
+        <div className="footerContainers">
+        <h1>
+        <Link to='/'>
+        <img src={require('./foglio.png')} alt="fireSpot"/>
+        </Link>
+      </h1>
+        </div>
+
+
+
+        </div>
     </div>
       
     </Fragment>
@@ -20,6 +66,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-
