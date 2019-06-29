@@ -26,8 +26,9 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
           
           
           <hr></hr>
+          
           <p>Online showrooms recently featured on Foglio</p>
-          <br></br>
+          
           
 
           <img src={require('../../img/Showroom_clients.png')} 

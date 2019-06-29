@@ -201,10 +201,17 @@ img {
 	color: black;
 }
 
-.btn-light,
 .bg-light,
 .badge-light,
 .alert-light {
+	color: rgb(0, 0, 0);
+}
+
+.btn-light {
+	color: rgb(255, 255, 255);
+}
+
+.btn-black {
 	color: rgb(0, 0, 0);
 }
 
@@ -237,7 +244,7 @@ img {
 .badge-white,
 .alert-white {
 	background: #fff;
-	color: #333;
+	color: rgb(0, 0, 0);
 	border: #ccc solid 1px;
 }
 
@@ -377,7 +384,7 @@ button {
 }
 
 .landing-inner {
-	color: rgb(0, 0, 0);
+	color: rgb(253, 253, 253);
 	height: 100%;
 	width: 80%;
 	margin: auto;
