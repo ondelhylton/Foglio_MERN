@@ -36,8 +36,8 @@ const Experience = ({ experience, deleteExperience }) => {
         <thead>
           <tr>
             <th>Name</th>
-            <th className="hide-sm">Type</th>
-            <th className="hide-sm">Color</th>
+            <th className="hide-sm">Category</th>
+            <th className="hide-sm">Description</th>
             <th />
           </tr>
         </thead>

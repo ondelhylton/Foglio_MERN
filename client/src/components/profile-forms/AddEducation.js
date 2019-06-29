@@ -32,10 +32,10 @@ const AddEducation = ({ addEducation, history }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary'>Add Your Education</h1>
-      <p className='lead'>
-        <i className='fas fa-code-branch' /> Add any school or bootcamp that you
-        have attended
+      <h2 className='large text-primary'>Add Upcoming Events/Show to View Your Products</h2>
+      <br></br>
+      <p className='le'>
+        You will receive an e-mail notification from each registrant
       </p>
       <small>* = required field</small>
       <form
@@ -48,7 +48,7 @@ const AddEducation = ({ addEducation, history }) => {
         <div className='form-group'>
           <input
             type='text'
-            placeholder='* School or Bootcamp'
+            placeholder='* Event Name'
             name='school'
             value={school}
             onChange={e => onChange(e)}
@@ -58,7 +58,7 @@ const AddEducation = ({ addEducation, history }) => {
         <div className='form-group'>
           <input
             type='text'
-            placeholder='* Degree or Certificate'
+            placeholder='* Location'
             name='degree'
             value={degree}
             onChange={e => onChange(e)}
@@ -68,14 +68,14 @@ const AddEducation = ({ addEducation, history }) => {
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Field of Study'
+            placeholder='Products to be shown'
             name='fieldofstudy'
             value={fieldofstudy}
             onChange={e => onChange(e)}
           />
         </div>
         <div className='form-group'>
-          <h4>From Date</h4>
+          <h4>Date</h4>
           <input
             type='date'
             name='from'
@@ -83,43 +83,19 @@ const AddEducation = ({ addEducation, history }) => {
             onChange={e => onChange(e)}
           />
         </div>
-        <div className='form-group'>
-          <p>
-            <input
-              type='checkbox'
-              name='current'
-              checked={current}
-              value={current}
-              onChange={() => {
-                setFormData({ ...formData, current: !current });
-                toggleDisabled(!toDateDisabled);
-              }}
-            />{' '}
-            Current School
-          </p>
-        </div>
-        <div className='form-group'>
-          <h4>To Date</h4>
-          <input
-            type='date'
-            name='to'
-            value={to}
-            onChange={e => onChange(e)}
-            disabled={toDateDisabled ? 'disabled' : ''}
-          />
-        </div>
+ 
         <div className='form-group'>
           <textarea
             name='description'
             cols='30'
             rows='5'
-            placeholder='Program Description'
+            placeholder='Event Description'
             value={description}
             onChange={e => onChange(e)}
           />
         </div>
         <input type='submit' className='btn btn-primary my-1' />
-        <Link className='btn btn-light my-1' to='/dashboard'>
+        <Link className='btn btn-primary' to='/dashboard'>
           Go Back
         </Link>
       </form>
