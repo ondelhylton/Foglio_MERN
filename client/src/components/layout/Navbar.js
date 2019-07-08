@@ -4,11 +4,12 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logout } from '../../actions/auth';
 
+
 const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
     <ul>
       <li>
-        <Link to='/technology'>Foglio Technology</Link>
+        <Link to='/technology'>Spots</Link>
       </li>
 
       <li>
@@ -35,7 +36,13 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const guestLinks = (
     <ul>
       <li>
-        <Link to='/technology'>Foglio Technology</Link>
+        <Link to='/technology'>Spots</Link>
+      </li>
+      <li>
+        <Link to='/technology'>Events</Link>
+      </li>
+      <li>
+        <Link to='/technology'>Climate Center</Link>
       </li>
       <li>
         <Link to='/register'>Register</Link>
@@ -49,10 +56,10 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
   
   return (
-    <nav className='navbar bg-dark'>
+    <nav className='navbar bg-white'>
       <h1>
         <Link to='/'>
-        <img src={require('./foglio.png')} alt="fireSpot"/>
+        <img src={require('./iconyc_logo.png')} alt="fireSpot"/>
         </Link>
       </h1>
       {!loading && (

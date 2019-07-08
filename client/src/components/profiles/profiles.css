@@ -1,0 +1,224 @@
+@media(min-width:678px){
+    .container-1{
+      display:flex;
+      flex-wrap:wrap;
+      /*
+      align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+      
+      flex-direction:column;
+      */
+      justify-content:space-around;
+      
+    }
+
+
+    h1 {
+      margin-bottom: 3px;
+    }
+    
+    h6 {
+      margin-top: 0px;
+    }
+
+    .container-2{
+        display:flex;  
+        flex-wrap:wrap;
+        justify-content:space-around;
+      }
+          
+    .container-3{
+        display:flex;  
+        flex-wrap:wrap;
+        justify-content:space-around;
+      }
+
+    .container-4{
+        display:flex;  
+        flex-wrap:wrap;
+        justify-content:space-around;
+      }
+
+
+
+
+     
+.container-1 div, .container-2 div, .container-3 div, .container-4 div{
+    border:1px #ccc solid;
+    padding:10px;
+  }
+  
+
+  .container-1-box{
+    flex-basis: 13%;
+   
+}
+
+
+
+.container-2-box{
+    flex-basis: 13%;
+   
+} 
+
+
+
+ 
+.container-3-box{
+    flex-basis: 13%;
+   
+  }
+
+
+.container-4-box{
+    flex-basis: 13%;
+   
+  }
+
+
+
+
+
+
+
+
+  
+/* .container-1:hover .hoverImg {
+    display: block;
+}
+.container-1 {
+  position: relative;
+  float: left;
+}
+
+.container-1 .hoverImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.container-1:hover .hoverImg */
+
+
+
+
+
+
+
+
+
+
+/* .box-1{
+    flex:2;
+    order:2;
+  }
+  
+  .box-2{
+    flex:1;
+    order:1;
+  }
+  
+  .box-3{
+    flex:1;
+    order: 3;
+  }
+   */
+/* 
+
+
+
+
+
+ */
+
+
+
+
+
+
+
+
+/* .h1 {
+    flex-direction: column, justify-content:center, align-items:center;
+}
+.h6 {
+    margin-top:-number you want here;
+} */
+
+
+  /* .container div{
+    display:flex;  
+    /*
+    justify-content:flex-start;
+    justify-content:flex-end;
+    justify-content:center;
+    justify-content:space-around;
+    */
+    /* justify-content:space-between;
+  }
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+.box{
+    background-color: lightgray;
+
+
+}
+.box-1{ 
+    flex1;
+    background-color: lightgray;
+} 
+
+.box-2{
+    flex1;
+}
+
+.box-2{
+    flex1;
+}
+
+.box-4{
+    flex1;
+}
+
+
+
+
+
+
+ */
+ 
+
+
+/* 
+.collection {
+    margin: 0 100px;
+    
+}
+
+.collection > a > img {
+    height: 320px;
+    
+}
+ 
+
+.thumb-wrapper {
+    position:relative;
+    }
+    
+    .thumbwrapper span {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent url(overlay.png) no-repeat;
+    } */

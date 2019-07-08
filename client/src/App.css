@@ -1,5 +1,4 @@
-/* Global Styles */
-:root {
+Global Styles :root {
 	--primary-color: #00000;
 	--dark-color: #343a40;
 	--light-color: #f4f4f4;
@@ -14,8 +13,8 @@
 }
 
 body {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 1rem;
+	font-family: 'Tajawal', sans-serif;
+	font-size: 1.8rem;
 	line-height: 1.6;
 	background-color: white;
 	color: black;
@@ -60,6 +59,16 @@ ul {
 
 img {
 	width: 100%;
+}
+
+h3 {
+	color: white;
+	text-shadow: .7px .7px black;
+}
+
+span.name {
+	color: rgb(216, 106, 40);
+	text-shadow: .7px .7px rgb(32, 32, 32);
 }
 
 /* Utilities */
@@ -236,12 +245,17 @@ img {
 	color: rgb(0, 0, 0);
 }
 
-.btn-light {
+.btn-home {
 	color: rgb(255, 255, 255);
+	background-color: rgb(216, 106, 40);
 }
 
 .btn-black {
 	color: rgb(0, 0, 0);
+}
+
+.navbar.bg-white {
+	opacity: 0.95;
 }
 
 .btn-dark,
@@ -299,7 +313,7 @@ img {
 
 /* Overlay */
 .dark-overlay {
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(65, 65, 65, 0.2);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -383,7 +397,7 @@ button {
 	top: 0;
 	border-bottom: 1px var(--primary-color);
 	opacity: 1;
-	background-color: black;
+	background-color: white;
 	font-weight: 100;
 }
 
@@ -392,13 +406,14 @@ button {
 }
 
 .navbar a {
-	color: #fff;
-	padding: 0.45rem;
-	margin: 0 0.25rem;
+	color: rgb(0, 0, 0);
+	padding: 0.55rem;
+	margin: 0 0.35rem;
+	font-size: 1.1rem;
 }
 
 .navbar a:hover {
-	color: var(--primary-color);
+	color: rgb(216, 106, 40);
 }
 
 .navbar .welcome span {
@@ -408,7 +423,7 @@ button {
 /* Landing Page */
 .landing {
 	position: relative;
-	background: url('https://media.giphy.com/media/W2JuFkJTKHiYvAWdl4/giphy.gif') no-repeat center center/cover;
+	background: url('./img/showcase.jpg') no-repeat center center/cover;
 	height: 100vh;
 }
 
@@ -579,7 +594,12 @@ button {
 	}
 
 	.lead {
-		font-size: 1rem;
+		font-size: rem;
+	}
+
+	#lead3 {
+		font-size: 2rem;
+		color: rgb(216, 106, 40);
 	}
 
 	/* Navbar */
